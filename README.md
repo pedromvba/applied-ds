@@ -49,7 +49,7 @@ Após a instalação da biblioteca Base dos dados, foi necessária a instalaçã
 
 ## Endpoints do Projeto
 
-O projeto disponibiliza 2 endpoints com 2 métodos GET de forma a permitir que as funcionalidades do aplicativo que são apresentadas em front-end via Streamlit também possam ser acessadas via APIs. Sendo assim, temos:
+O projeto disponibiliza 2 endpoints com 2 métodos GET de forma a permitir que as funcionalidades do aplicativo que são apresentadas em front-end via Streamlit também possam ser acessadas via APIs por meio de parametros. Sendo assim, temos:
 
 * /atendimento-proximo:  
     * Método: GET
