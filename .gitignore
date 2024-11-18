@@ -1,3 +1,5 @@
 .env
 .projectvenv
 data
+.vscode
+*__pycache__*
