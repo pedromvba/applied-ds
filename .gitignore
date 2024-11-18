@@ -1,5 +1,6 @@
 .env
 .projectvenv
-data
 .vscode
 *__pycache__*
+data/MiniLM
+data/full_data.csv

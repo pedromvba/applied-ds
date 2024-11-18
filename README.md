@@ -49,13 +49,17 @@ Após a instalação da biblioteca Base dos dados, foi necessária a instalaçã
 
 ## Endpoints do Projeto
 
-O projeto disponibiliza 2 endpoints com 2 métodos GET de forma a permitir que as funcionalidades do aplicativo que são apresentadas em front-end via Streamlit também possam ser acessadas via APIs por meio de parametros. Sendo assim, temos:
+O projeto disponibiliza 2 endpoints com 2 métodos POST de forma a permitir que as funcionalidades do aplicativo que são apresentadas em front-end via Streamlit também possam ser acessadas via APIs. 
+Sendo assim, temos:
 
 * /atendimento-proximo:  
-    * Método: GET
+    * Método: POST
     * Funcionalidade: retornar a cidade mais recomendada para o atendimento mais próximo, bem como o tempo de deslocamento
+    * Body
+     ```python
+    {"origem": "Pacaraima", "raio": 300}
+    ```
     * Exemplo:  
-
     ```python
     {"atendimento":"Pacaraima","tempo_viagem":"2 horas e 35 minutos"}
     ```
