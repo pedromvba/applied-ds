@@ -6,16 +6,16 @@ O sistema de saúde público no Brasil é bastante abrangente, tanto em termos d
 ser realizados gratuitamente quanto no espaço geográfico que ele deve cobrir, considerando as dimensões do Brasil. 
 Ao mesmo tempo, devido a essas características, bem como a definição na Constituição Nacional de que a saúde é
 direito do cidadão, o sistema de saúde brasileiro necessita de um bom planejamento de investimentos. Nesse sentido, 
-é importe que os gestores da saúde consigam ter uma visão resumida dos atendimentos realizados, bem como dos investimentos 
-despendidos, de forma a planejar as despesas nos anos posteriores.
+é importe que os gestores da saúde, bem como empresário do setor privado consigam ter uma visão dos locais com maior
+necessidade e oportunidade de investimentos, e que o cidadão consiga identificar com facilidade a localidade na qual
+pode/deve buscar atendimento.
 
 Além disso, uma das realidades que acomete o povo brasileiro é a infraestrutura de saúde mais 
 simples longe das capitais, fazendo com que o público tenha que se deslocar grandes distâncias 
 para ser atendido nas capitais. 
 
 Assim, de forma a subsidiar o planejamento de gestores dos Ministério da Saúde para os anos posteriores, indicando localidades nas quais há espaço para incremento/investimento em infraestrutura de 
-saúde, o aplicativo criado apresenta de forma compreensível e prática informações relativas a atendimentos do SUS para que sejam 
-utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde 
+saúde, o aplicativo criado apresenta de forma compreensível e prática informações relativas a atendimentos do SUS para que sejam utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde 
 no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros ou investimentos no setor etc.
          
 Por fim, de forma a apoiar o cidadão, o aplicativo indica o Município mais próximo e com o melhor atendimento
@@ -109,5 +109,3 @@ Milestone: aplicação acessível e funcional via navegador web.
 *  Indicador: Número de Contratos Assinados até o final de 2025.
 
   * Meta: 1 Prefeitura,  2 Parlamentares/Candidatos, 1 Empresário
-
-

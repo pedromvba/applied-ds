@@ -6,7 +6,15 @@ Subsidiar o planejamento de gestores dos Ministério da Saúde para o ano poster
 
 ## Instalação do Ambiente e Biblioteca
 
-As dependências necessárias para a execução do projeto estão registradas no arquivo requirements.txt. 
+As dependências necessárias para a execução do projeto estão registradas no arquivo requirements.txt.
+
+Todavia, os requisitos do ambiente de obtenção dos dados, não são compatíveis com os requisitos de execução da aplicação. Isso ocorre pois a api de obtenção dos dados utiliza versões antigas de python e pacotes como o Numpy, já a aplicação necessita de versões mais novas, principalmente pelo uso de LLM.
+
+De forma a contornar esse ponto, os dados do projeto foram incluídos diretamente no Github e o requirements.txt está setado para as bibliotecas necessárias para rodar a aplicação de forma que ao clonar o projeto, e instalar o requirements, o desenvolvedor conseguirá executar a aplicação.
+
+Assim, não é necessário obter os dados, mas caso o desenvolvedor deseje, abaixo segue a instrução para obtenção de novos dados por meio da API da Base dos Dados.
+
+### Instrução para Obtenção de novos Dados por meio da API da Base dos Dados:
 
 As instruções para a instalação da biblioteca em python podem ser observadas no [link](https://basedosdados.github.io/mais/access_data_packages/).
 
@@ -47,6 +55,42 @@ A Google fornece 1 TB gratuito por mês de uso do BigQuery para cada projeto que
 
 Após a instalação da biblioteca Base dos dados, foi necessária a instalação do Streamlit e da biblioteca tabula-py, chegando assim ao requirements.txt atual.
 
+## Instalação
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/pedromvba/applied-ds.git
+    ```
+
+2. Crie um ambiente virtual e ative-o:
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+    ```
+
+3. Instale as dependências:
+
+    ```bash
+    pip install -r requirements.txt
+
+## Uso
+
+1. Execute o script `main.py` via uvicorn para ativar a api:
+
+    ```bash
+    uvicorn api.main:app
+    ```
+
+2. Caso deseje, faça chamadas a api de acordo com os endpoints do projeto
+
+3. Ative a aplicação via streamlit
+
+    ```bash
+    streamlit run streamlit/Home.py
+    ```
+
 ## Endpoints do Projeto
 
 O projeto disponibiliza 2 endpoints com 2 métodos POST de forma a permitir que as funcionalidades do aplicativo que são apresentadas em front-end via Streamlit também possam ser acessadas via APIs. 
@@ -80,9 +124,7 @@ Sendo assim, temos:
 
 ## Dados do Projeto
 
-Devido ao tamanho dos dados, a pasta data não foi replicada no Github. Os dados podem ser obtidos recriando-se o ambiente e executando os scripts conforme registrado no Data Summary Report, ou podem ser obtidos diretamente no seguinte [link](https://drive.google.com/file/d/1sNKzhx4-ATKZ2tqLI8mPeVx1YYeMMoiv/view?usp=share_link).
-
-Caso opte pelo download, observe a necessidade de colocar o diretório data na raiz do projeto, juntamente com outras pastas como docs, notebooks e app.
+Devido ao tamanho dos dados, a totalidade dos dados não foi replicada no Github, todavia os dados necessários para executar o projeto estão no repositório. Para obter a totalidade dos dados, deve-se recriar o ambiente e executaros scripts conforme registrado no Data Summary Report.
 
 ## Links Úteis
 
