@@ -4,3 +4,5 @@
 *__pycache__*
 data/MiniLM
 data/full_data.csv
+tasks.txt
+support.ipynb
